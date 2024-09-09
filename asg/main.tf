@@ -64,7 +64,7 @@ resource "aws_lb_target_group" "week4" {
       interval            = 10
       unhealthy_threshold = 3
       timeout             = 5
-      path                = "/health"
+      path                = "/"
       port                = 80
       matcher = "200-299"      
   }
