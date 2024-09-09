@@ -126,18 +126,6 @@ resource "aws_autoscaling_group" "week4" {
  
 }
 
-
-#resource "aws_lb_listener_rule" "static" {
- # listener_arn = aws_lb_listener.http.arn
-  #priority     = 10
-
-  #action {
-   # type             = "forward"
-    #target_group_arn = aws_lb_target_group.week4.arn
-  #}
-#}
-
-
 resource "aws_autoscaling_policy" "week4" {
   autoscaling_group_name = aws_autoscaling_group.week4.name
   name                   = "week4-asg-policy"
